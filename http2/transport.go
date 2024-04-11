@@ -1812,8 +1812,7 @@ func (cc *ClientConn) encodeHeaders(req *http.Request, addGzipHeader bool, trail
 				// fields. We have already checked if any
 				// are error-worthy so just ignore the rest.
 				continue
-			} 
-			// else if strings.EqualFold(kv.Key, "cookie") {
+			// } else if strings.EqualFold(kv.Key, "cookie") {
 			// 	// Per 8.1.2.5 To allow for better compression efficiency, the
 			// 	// Cookie header field MAY be split into separate header fields,
 			// 	// each with one or more cookie-pairs.
